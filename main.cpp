@@ -6,9 +6,9 @@ int main()
 {
     int *b = new int[NELEMENTS]; //NELEMENTS helyett a helyes: N_ELEMENTS
     std::cout << '1-100 ertekek duplazasa' // pontosvessző hiányzik a sor végén és idézőjel kell
-    for (int i = 0;) //hiányzik a felső limit, illetve a lépésmérték
+    for (int i = 0; ) //hiányzik a felső limit, illetve a lépésmérték
     {
-        b[i] = i * 2; //i+1. tömbelemtől kéne számolni
+        b[i] = i * 2; //i-1. tömbelemtől kéne számolni
     }
     for (int i = 0; i; i++) //rossz az intervallum megadás
     {
